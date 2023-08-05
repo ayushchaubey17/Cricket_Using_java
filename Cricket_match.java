@@ -43,21 +43,19 @@ public class Cricket_match {
             int ydec = sc1.nextInt();
 
             switch (ydec) {
-                case 1:
-                {
+                case 1: {
                     System.out.println("you have choosen for batting");
                     int target = battingFirst() + 1;
-                    System.out.println("opponent need "+target+ " run in 2 over");
+                    System.out.println("opponent need " + target + " run in 2 over");
                     bowlingLast(target);
                     break;
 
 
                 }
-                case 2:
-                {
+                case 2: {
                     System.out.println("you have choosen for bowling");
                     int target = bowlingFirst() + 1;
-                    System.out.println("you need "+target + "run in 2 over");
+                    System.out.println("you need " + target + "run in 2 over");
                     battingLast(target);
 
 
@@ -66,24 +64,20 @@ public class Cricket_match {
             }
 
 
-
-
-
-        }
-        else {
+        } else {
 
             System.out.println("you loss the toss");
             int com_dec = rn1.nextInt(2);
             if (com_dec == 0) {
                 System.out.println("computer chooses for bowling......get ready for bat first");
                 int target = battingFirst() + 1;
-                System.out.println("opponent need "+target+ " run in 2 over");
+                System.out.println("opponent need " + target + " run in 2 over");
                 bowlingLast(target);
 
             } else {
                 System.out.println("computer chooses for batting.....get ready for bowl first");
                 int target = bowlingFirst() + 1;
-                System.out.println("you need "+target + "run in 2 over");
+                System.out.println("you need " + target + "run in 2 over");
                 battingLast(target);
             }
         }
@@ -99,10 +93,9 @@ public class Cricket_match {
         int ball = 0;
         int score = 0;
         int wicket = 0;
-        while (over < 2)
-        {
+        while (over < 2) {
             System.out.println(" score " + run + "-" + wicket + " (" + over + "." + ball + ")");
-            System.out.println("\n"+(ball + 1)+" delivery of  over " + (over + 1));
+            System.out.println("\n" + (ball + 1) + " delivery of  over " + (over + 1));
             System.out.println("press enter to play the ball");
             String p1 = sc2.nextLine();
             int s1 = rn2.nextInt(19);
@@ -213,7 +206,7 @@ public class Cricket_match {
         }
         System.out.println(" score " + run + "-" + wicket + " (" + over + "." + ball + ")");
 
-return  (run);
+        return (run);
 
     }
 
@@ -230,8 +223,7 @@ return  (run);
         int balll = 0;
 
         int wickett = 0;
-        while (overr < 2  &&runn<target)
-        {
+        while (overr < 2 && runn < target) {
             System.out.println(" score " + runn + "-" + wickett + " (" + overr + "." + balll + ")");
             System.out.println("\n now the delivery of " + (balll + 1) + " ball of over " + (overr + 1));
             System.out.println("press enter to throw the ball");
@@ -365,8 +357,7 @@ return  (run);
         int balll = 0;
 
         int wickett = 0;
-        while (overr < 2 )
-        {
+        while (overr < 2) {
             System.out.println(" score " + runn + "-" + wickett + " (" + overr + "." + balll + ")");
             System.out.println("\n now the delivery of " + (balll + 1) + " ball of over " + (overr + 1));
             System.out.println("press enter to throw the ball");
@@ -495,10 +486,9 @@ return  (run);
         int ball = 0;
         int score = 0;
         int wicket = 0;
-        while (over < 2  && run<target)
-        {
+        while (over < 2 && run < target) {
             System.out.println(" score " + run + "-" + wicket + " (" + over + "." + ball + ")");
-            System.out.println("\n"+(ball + 1)+" delivery of  over " + (over + 1));
+            System.out.println("\n" + (ball + 1) + " delivery of  over " + (over + 1));
             System.out.println("press enter to play the ball");
             String p1 = sc2.nextLine();
             int s1 = rn2.nextInt(19);
